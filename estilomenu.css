@@ -1,0 +1,131 @@
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte da página */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Cor de fundo da página */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para o cabeçalho da página */
+header {
+    display: flex; /* Usa o layout flexível */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    position: fixed; /* Fixa o cabeçalho no topo da página */
+    top: 0;
+    left: 0;
+    width: calc(100% - 50px); /* Ajusta a largura do cabeçalho */
+    padding: 10px 30px; /* Espaçamento interno */
+    background-color: #118137; /* Cor de fundo do cabeçalho */
+    color: #ffffff; /* Cor do texto */
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+}
+
+/* Estilo para a logo dentro do cabeçalho */
+header .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Faz a imagem ficar circular */
+}
+
+/* Estilo para o título do cabeçalho */
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilo para o botão de alternância de modo escuro */
+button#darkModeToggle {
+    background-color: #ffffff; /* Cor de fundo */
+    color: #118137; /* Cor do texto */
+    border: none;
+    padding: 8px 16px; /* Espaçamento interno */
+    border-radius: 5px;
+    cursor: pointer; /* Cursor de mão ao passar por cima */
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover no botão de alternância */
+button#darkModeToggle:hover {
+    background-color: #4caf50; /* Altera a cor do fundo */
+    color: #ffffff; /* Altera a cor do texto */
+}
+
+/* Estilo para a seção de boas-vindas */
+.estilo {
+    margin-top: 100px; /* Espaçamento para evitar sobreposição com o cabeçalho fixo */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px;
+}
+
+/* Estilo para a imagem da seção de boas-vindas */
+.estilo-image {
+    width: 15%; /* Define a largura da imagem */
+    max-height: 400px; /* Altura máxima da imagem */
+    object-fit: cover; /* Garante que a imagem preencha o espaço */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+}
+
+/* Estilo para o título da seção de boas-vindas */
+.estilo h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #47825b;
+}
+
+/* Estilo para o parágrafo da seção de boas-vindas */
+.estilo p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Estilo para o container de links */
+.container {
+    display: flex; /* Layout flexível */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin: 40px 20px; /* Margens ao redor do container */
+}
+
+/* Estilo para os links, transformando-os em botões */
+.box {
+    width: 220px; /* Largura do botão */
+    height: 60px; /* Altura do botão */
+    background-color: #0dcf4e; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    display: flex; /* Layout flexível dentro do botão */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar por cima */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s; /* Transições suaves */
+}
+
+/* Efeito de hover no link */
+.box:hover {
+    background-color: #0056b3; /* Altera a cor do fundo */
+    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Alinha os itens do cabeçalho verticalmente */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .container {
+        flex-direction: column; /* Organiza os links verticalmente */
+    }
+
+    .estilo h2 {
+        font-size: 22px; /* Ajusta o tamanho do título */
+    }
+}

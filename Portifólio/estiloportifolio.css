@@ -1,0 +1,173 @@
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte da página */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Cor de fundo da página */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    display: flex; /* Usa o layout flexível */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    position: fixed; /* Fixa o cabeçalho no topo da página */
+    top: 0;
+    left: 0;
+    width: calc(100% - 50px); /* Ajusta a largura do cabeçalho */
+    padding: 10px 30px;
+    background-color: #118137; /* Cor de fundo do cabeçalho */
+    color: #ffffff; /* Cor do texto */
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+}
+
+/* Estilo para o lado esquerdo do cabeçalho (logo e menu) */
+.header-left {
+    display: flex; /* Alinha logo e menu horizontalmente */
+    align-items: center;
+}
+
+/* Estilo para a logo do cabeçalho */
+header .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Faz a imagem ficar circular */
+}
+
+/* Estilo para o menu de navegação */
+nav {
+    display: flex; /* Usa layout flexível para os links */
+    gap: 20px; /* Espaçamento entre os links */
+}
+
+/* Estilo para a lista de navegação */
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Alinha os itens horizontalmente */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para cada item da lista no menu */
+nav ul li {
+    margin: 0;
+}
+
+/* Estilo para os links de navegação */
+nav ul li a {
+    color: #ffffff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 18px; /* Tamanho da fonte */
+    padding: 8px 16px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+}
+
+/* Efeito de hover nos links de navegação */
+nav ul li a:hover {
+    background-color: #4caf50; /* Altera a cor de fundo quando o link é hovered */
+}
+
+/* Estilo para o título principal do portfólio */
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    padding-left: 20px; /* Espaçamento à esquerda */
+}
+
+/* Estilo para a seção de Portfólio */
+.portfolio {
+    margin-top: 120px; /* Espaço para o header fixo */
+    padding: 40px;
+    background-color: #e8f5e9; /* Cor de fundo da seção */
+}
+
+/* Estilo para o conteúdo da seção de Portfólio */
+.portfolio-content {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+/* Estilo para o título da seção de projetos */
+.portfolio-content h2 {
+    font-size: 36px;
+    color: #118137;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o parágrafo da seção de projetos */
+.portfolio-content p {
+    font-size: 18px;
+    line-height: 1.6; /* Espaçamento entre as linhas */
+    margin-bottom: 40px;
+}
+
+/* Estilo para cada projeto no portfólio */
+.project {
+    background-color: #ffffff; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento entre os projetos */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para o título de cada projeto */
+.project h3 {
+    font-size: 24px;
+    color: #118137;
+}
+
+/* Estilo para o parágrafo de cada projeto */
+.project p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilo para os links dentro de cada projeto */
+.project a {
+    color: #118137; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: color 0.3s ease; /* Transição suave na cor */
+}
+
+/* Efeito de hover no link de cada projeto */
+.project a:hover {
+    color: #4caf50; /* Altera a cor do link quando hovered */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    /* Ajuste do padding para a seção de Portfólio em telas menores */
+    .portfolio-content {
+        padding: 20px;
+    }
+
+    /* Ajuste do padding nos projetos em telas menores */
+    .project {
+        padding: 15px;
+    }
+}
+
+
+/* Estilo do Botão Voltar ao Topo */
+#botaoTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #118137;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none; /* Esconde o botão por padrão */
+    transition: background-color 0.3s ease;
+}
+
+#botaoTopo:hover {
+    background-color: #4caf50;
+}

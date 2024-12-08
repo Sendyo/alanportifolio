@@ -1,0 +1,160 @@
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte da página */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Cor de fundo da página */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    display: flex; /* Usa o layout flexível */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    position: fixed; /* Fixa o cabeçalho no topo da página */
+    top: 0;
+    left: 0;
+    width: calc(100% - 50px); /* Ajusta a largura do cabeçalho */
+    padding: 10px 30px;
+    background-color: #118137; /* Cor de fundo do cabeçalho */
+    color: #ffffff; /* Cor do texto */
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+}
+
+/* Estilo para o lado esquerdo do cabeçalho (logo e menu) */
+.header-left {
+    display: flex; /* Alinha logo e menu horizontalmente */
+    align-items: center;
+}
+
+/* Estilo para a logo do cabeçalho */
+header .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Faz a imagem ficar circular */
+}
+
+/* Estilo para o menu de navegação */
+nav {
+    display: flex; /* Usa layout flexível para os links */
+    gap: 20px; /* Espaçamento entre os links */
+}
+
+/* Estilo para a lista de navegação */
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Alinha os itens horizontalmente */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para cada item da lista no menu */
+nav ul li {
+    margin: 0;
+}
+
+/* Estilo para os links de navegação */
+nav ul li a {
+    color: #ffffff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 18px; /* Tamanho da fonte */
+    padding: 8px 16px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+}
+
+/* Efeito de hover nos links de navegação */
+nav ul li a:hover {
+    background-color: #4caf50; /* Altera a cor de fundo quando o link é hovered */
+}
+
+/* Estilo para o título principal do portfólio */
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    padding-left: 20px; /* Espaçamento à esquerda */
+}
+
+/* Estilo para a seção Sobre Mim */
+.sobre-mim {
+    display: flex; /* Usa layout flexível para alinhar os itens */
+    flex-direction: row; /* Alinha os itens horizontalmente */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin-top: 120px; /* Espaço para o header fixo */
+    padding: 40px;
+    background-color: #e8f5e9; /* Cor de fundo da seção */
+}
+
+/* Estilo para o conteúdo da seção sobre mim */
+.sobre-mim-conteudo {
+    display: flex; /* Layout flexível */
+    flex-direction: row; /* Alinha os itens horizontalmente */
+    gap: 40px; /* Espaçamento entre a imagem e o texto */
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+/* Estilo para a imagem sobre mim */
+.imagem-sobre {
+    flex: 1; /* A imagem ocupa 1 parte do espaço disponível */
+}
+
+.imagem-sobre-mim {
+    width: 100%; /* A imagem ocupa toda a largura do seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para o texto sobre mim */
+.texto-sobre {
+    flex: 2; /* O texto ocupa 2 partes do espaço disponível */
+    text-align: justify; /* Alinha o texto justificado */
+}
+
+/* Estilo para o título da seção sobre mim */
+.texto-sobre h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #118137; /* Cor verde para o título */
+}
+
+/* Estilo para o parágrafo da seção sobre mim */
+.texto-sobre p {
+    font-size: 18px;
+    line-height: 1.6; /* Espaçamento entre as linhas */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    /* Ajuste do layout para telas menores */
+    .sobre-mim-conteudo {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    /* Ajuste do tamanho da imagem */
+    .imagem-sobre-mim {
+        width: 80%; /* A imagem ocupa 80% da largura */
+        max-width: 500px; /* Largura máxima da imagem */
+    }
+
+    /* Ajuste do alinhamento do texto */
+    .texto-sobre {
+        text-align: center; /* Centraliza o texto */
+    }
+
+    /* Estilo do menu de navegação em telas menores */
+    nav ul {
+        flex-direction: column; /* Alinha os itens verticalmente */
+    }
+
+    /* Ajuste do título do portfólio em telas menores */
+    header h1 {
+        padding-left: 0;
+        text-align: center; /* Centraliza o título */
+        margin-top: 10px;
+    }
+}
